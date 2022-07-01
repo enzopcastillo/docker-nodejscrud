@@ -1,0 +1,12 @@
+version: '1'
+services:
+  app:
+    image: nodejsCrudAgentes
+    container_name: nodeserver
+    build: ./
+    restar: always
+    ports: 
+      - "3000:3000"
+    environment:
+      - HOST=0.0.0.0
+      - PORT=4000
